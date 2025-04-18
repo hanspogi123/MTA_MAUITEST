@@ -27,6 +27,8 @@
         
         <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
         <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
+        <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
+        <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
 
 
     </VerticalStackLayout>
