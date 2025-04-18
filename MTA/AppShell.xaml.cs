@@ -6,7 +6,6 @@
         {
             InitializeComponent();
             Routing.RegisterRoute("mooddetails", typeof(MTA.Pages.MoodDetailsPage));
-            Routing.RegisterRoute("mooddetails", typeof(MTA.Pages.MoodDetailsPage));
         }
     }
 }

@@ -24,6 +24,9 @@
         <Button Text="Clear" BackgroundColor="LightGray" Command="{Binding ClearMoodCommand}"/>
         <Button Text="View Mood Details" Clicked="OnViewMoodClicked" />
         <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
+        
+        <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
+        <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
 
 
     </VerticalStackLayout>
