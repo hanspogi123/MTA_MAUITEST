@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MTA.MoodVM"
+             x:Class="MTA.Pages.MainPage"
+             BackgroundColor="{DynamicResource bgColor}">
+
+    <ContentPage.BindingContext>
+        <vm:MoodVM/>
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="30" Spacing="15" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label Text="{Binding CurrentMood}" FontSize="22" TextColor="{DynamicResource fgColor}"/>
+        <Label Text="{Binding MoodEmoji}" FontSize="48" TextColor="{DynamicResource fgColor}"/>
+
+        <Button Text="Happy 😊" Command="{Binding SetMoodCommand}" CommandParameter="Happy" Style="{DynamicResource MoodButtonStyle}" />
+        <Button Text="Sad 😢" Command="{Binding SetMoodCommand}" CommandParameter="Sad" Style="{DynamicResource MoodButtonStyle}"/>
+        <Button Text="Angry 😡" Command="{Binding SetMoodCommand}" CommandParameter="Angry" Style="{DynamicResource MoodButtonStyle}"/>
+
+        <Button Text="Light Mode" Clicked="LightMode" Style="{DynamicResource MoodButtonStyle}"/>
+        <Button Text="Dark Mode" Clicked="DarkMode" Style="{DynamicResource MoodButtonStyle}"/>
+
+        <Button Text="Clear" BackgroundColor="LightGray" Command="{Binding ClearMoodCommand}"/>
+        <Button Text="View Mood Details" Clicked="OnViewMoodClicked" />
+        <Button Text="Show Mood Details" Command="{Binding ShowMoodDetailsCommand}" />
+
+
+    </VerticalStackLayout>
+
+  
+</ContentPage>
